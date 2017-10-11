@@ -9,4 +9,8 @@ gittest1
 hello world
 
 #C4新增
+#B1新增
+#删除hello world
+#C4新增 hello world
+hello world
 hello world
