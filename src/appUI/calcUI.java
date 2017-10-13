@@ -16,7 +16,7 @@ import org.w3c.dom.events.EventListener;
 import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JButton;
-
+// Add some comments.
 public class calcUI extends JFrame {
 
 	private JPanel contentPane;
