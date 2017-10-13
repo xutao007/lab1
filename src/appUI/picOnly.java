@@ -16,7 +16,7 @@ import javax.swing.border.EmptyBorder;
 import javax.imageio.ImageIO;
 import javax.swing.JButton;
 import javax.swing.JLabel;
-//B1 adjust 3.
+// merge conflict 3.
 public class picOnly extends JFrame {
 
 	private JPanel contentPane;

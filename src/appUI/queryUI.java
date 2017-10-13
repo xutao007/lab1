@@ -13,7 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.JTextArea;
-//B1 adjust 2.
+// merge conflict 2.
 public class queryUI extends JFrame {
 
 	private JPanel contentPane;
