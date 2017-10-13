@@ -18,7 +18,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 
 public class picOnly extends JFrame {
-
+        // B2 adjust 3.
 	private JPanel contentPane;
 	private String picPath;
 	private ImagePanel panel;

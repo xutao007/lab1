@@ -14,7 +14,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 
 public class randomUI extends JFrame {
-
+        // B2 adjust 1.
 	private JPanel contentPane;
 	private JTextArea textArea;
 	private String allPath;
