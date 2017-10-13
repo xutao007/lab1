@@ -16,7 +16,7 @@ import javax.swing.border.EmptyBorder;
 import javax.imageio.ImageIO;
 import javax.swing.JButton;
 import javax.swing.JLabel;
-
+//C4 adjust C3
 public class picOnly extends JFrame {
 
 	private JPanel contentPane;
