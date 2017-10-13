@@ -15,7 +15,7 @@ import javax.swing.JButton;
 import javax.swing.JTextArea;
 // merge conflict 2.
 public class queryUI extends JFrame {
-
+        // B2 adjust 2.
 	private JPanel contentPane;
 	private JTextField word1;
 	private JTextField word2;

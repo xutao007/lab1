@@ -13,7 +13,7 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 // merge conflict 0.
 public class startUI {
-
+        // B2 adjust 0.
 	private JFrame frame;
 	private JTextField textField;
 	private String filename;
