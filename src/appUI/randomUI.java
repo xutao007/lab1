@@ -12,9 +12,15 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
+<<<<<<< HEAD
 
 public class randomUI extends JFrame {
 
+=======
+// merge conflict 1.
+public class randomUI extends JFrame {
+        // B2 adjust 1.
+>>>>>>> origin/1150310722
 	private JPanel contentPane;
 	private JTextArea textArea;
 	private String allPath;

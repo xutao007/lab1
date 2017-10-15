@@ -11,9 +11,15 @@ import javax.swing.JTextField;
 
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
+<<<<<<< HEAD
 
 public class startUI {
 
+=======
+// merge conflict 0.
+public class startUI {
+        // B2 adjust 0.
+>>>>>>> origin/1150310722
 	private JFrame frame;
 	private JTextField textField;
 	private String filename;

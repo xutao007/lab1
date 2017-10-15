@@ -17,6 +17,7 @@ import javax.swing.JTextField;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 
+// Add some comments.
 public class calcUI extends JFrame {
 
 	private JPanel contentPane;
@@ -124,13 +125,13 @@ public class calcUI extends JFrame {
 	        	String word1 = from.getText();
 	        	String word2 = to.getText();
 	        	if(word1.isEmpty() || word2.isEmpty()){
-	        		warningMsg.setText("Çë¹æ·¶ÊäÈë£¬²»ÒªÎª¿Õ");
+	        		warningMsg.setText("ï¿½ï¿½æ·¶ï¿½ï¿½ï¿½ë£¬ï¿½ï¿½ÒªÎªï¿½ï¿½");
 	        	}
 	        	else{
 	        		graphFunction f = new graphFunction();
 	        		pathStr = f.calcShortestPath(gDigraph, word1, word2);
 	        		if(pathStr == null){
-	        			warningMsg.setText("Á½Õß²»¿É´ï");
+	        			warningMsg.setText("ï¿½ï¿½ï¿½ß²ï¿½ï¿½É´ï¿½");
 	        		}
 	        		String dotStr = f.getGraphDot(gDigraph, pathStr);
 	    		    GraphViz gv = new GraphViz();
@@ -145,11 +146,11 @@ public class calcUI extends JFrame {
 	    				gv.writeGraphToFile(gv.getGraph(gv.getDotSource(), type, repesentationType), out);
 	    			}
 	    			else{
-	    				System.out.print("¿Õ");
+	    				System.out.print("ï¿½ï¿½");
 	    			}
 	    			picOnly picWin = new picOnly();
 	    			picWin.setPicPath("e:\\path1.jpg");
-	    			picWin.setTitle("×î¶ÌÂ·¾¶");
+	    			picWin.setTitle("ï¿½ï¿½ï¿½Â·ï¿½ï¿½");
 	    			picWin.loadPic();
 	    			picWin.setVisible(true);
 	        	}
@@ -157,7 +158,7 @@ public class calcUI extends JFrame {
 	        else{
 	        	String source = st.getText();
 	        	if(source.isEmpty()){
-	        		warningMsg.setText("Çë¹æ·¶ÊäÈë,²»ÒªÎª¿Õ");
+	        		warningMsg.setText("ï¿½ï¿½æ·¶ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ÒªÎªï¿½ï¿½");
 	        	}
 	        	else{
 	        	}

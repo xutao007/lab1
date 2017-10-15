@@ -88,7 +88,7 @@ public class queryUI extends JFrame {
 	        	String w1 = word1.getText();
 	        	String w2 = word2.getText();
 	        	if(w1.isEmpty() && w2.isEmpty()){
-	        		textArea.setText("ÇëÈ·±£word1ºÍword2·Ç¿Õ");
+	        		textArea.setText("ï¿½ï¿½È·ï¿½ï¿½word1ï¿½ï¿½word2ï¿½Ç¿ï¿½");
 	        	}
 	        	else{
 	        		graphFunction f = new graphFunction();

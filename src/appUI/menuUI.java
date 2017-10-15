@@ -44,39 +44,67 @@ public class menuUI extends JFrame {
 	public menuUI() {
 		setTitle("\u6709\u5411\u56FE\u5C0F\u73A9\u610F");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+<<<<<<< HEAD
 		setBounds(100, 100, 1000, 900);
+=======
+		setBounds(100, 100, 676, 599);
+>>>>>>> origin/1150310722
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		panel = new ImagePanel();
+<<<<<<< HEAD
 		panel.setBounds(60, 49, 700, 750);
+=======
+		panel.setBounds(60, 49, 400, 480);
+>>>>>>> origin/1150310722
 		contentPane.add(panel);
 		
 		JButton exportButton = new JButton("\u5BFC\u51FA\u6709\u5411\u56FE");
 		exportButton.setActionCommand("export");
+<<<<<<< HEAD
 		exportButton.setBounds(850, 60, 122, 23);
+=======
+		exportButton.setBounds(494, 60, 122, 23);
+>>>>>>> origin/1150310722
 		contentPane.add(exportButton);
 		
 		JButton queryButton = new JButton("\u67E5\u8BE2\u6865\u63A5\u8BCD");
 		queryButton.setActionCommand("query");
+<<<<<<< HEAD
 		queryButton.setBounds(850, 130, 122, 23);
+=======
+		queryButton.setBounds(494, 130, 122, 23);
+>>>>>>> origin/1150310722
 		contentPane.add(queryButton);
 		
 		JButton newstrButton = new JButton("\u751F\u6210\u65B0\u6587\u672C");
 		newstrButton.setActionCommand("newStr");
+<<<<<<< HEAD
 		newstrButton.setBounds(850, 197, 122, 23);
+=======
+		newstrButton.setBounds(494, 197, 122, 23);
+>>>>>>> origin/1150310722
 		contentPane.add(newstrButton);
 		
 		JButton calcButton = new JButton("\u8BA1\u7B97\u8DEF\u5F84");
 		calcButton.setActionCommand("calc");
+<<<<<<< HEAD
 		calcButton.setBounds(850, 264, 122, 23);
+=======
+		calcButton.setBounds(494, 264, 122, 23);
+>>>>>>> origin/1150310722
 		contentPane.add(calcButton);
 		
 		JButton walkButton = new JButton("\u968F\u673A\u6E38\u8D70");
 		walkButton.setActionCommand("walk");
+<<<<<<< HEAD
 		walkButton.setBounds(850, 331, 122, 23);
+=======
+		walkButton.setBounds(494, 331, 122, 23);
+>>>>>>> origin/1150310722
 		contentPane.add(walkButton);
 		
 		exportButton.setActionCommand("export");
@@ -138,10 +166,16 @@ public class menuUI extends JFrame {
 		Image srcImg;
 		try {
 			srcImg = ImageIO.read(file);
+<<<<<<< HEAD
 			int height = 750;
 			//double width = srcImg.getWidth(null) * 750.0 / srcImg.getHeight(null);
 			
 			Image imageTemp = srcImg.getScaledInstance(700, height, Image.SCALE_SMOOTH);
+=======
+			int height = 480;
+			double width = srcImg.getWidth(null) * 480.0 / srcImg.getHeight(null);
+			Image imageTemp = srcImg.getScaledInstance((int)width, height, Image.SCALE_SMOOTH);
+>>>>>>> origin/1150310722
 			panel.loadPhoto(imageTemp);
 			//panel.repaint();
 		} catch (IOException e) {

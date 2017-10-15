@@ -61,12 +61,17 @@ public class picOnly extends JFrame {
 	public void loadPic(){
 		File file = null;
 		file = new File(picPath);
-		//ÏÔÊ¾Í¼Æ¬
+		//ï¿½ï¿½Ê¾Í¼Æ¬
 		Image srcImg;
 		try {
 			srcImg = ImageIO.read(file);
+<<<<<<< HEAD
 			int height = 1000;
 			int width = srcImg.getWidth(null) * 1000 / height;
+=======
+			int height = 580;
+			int width = srcImg.getWidth(null) * 580 / height;
+>>>>>>> origin/1150310722
 			Image imageTemp = srcImg.getScaledInstance(width, height, Image.SCALE_SMOOTH);
 			panel.setBounds(5, 5, width, height);
 			panel.loadPhoto(imageTemp);
@@ -79,13 +84,13 @@ public class picOnly extends JFrame {
 	}
 	class ImagePanel extends JPanel {
 		private Image image;
-		        //³õÊ¼»¯Ê±£¬¼ÓÔØµÄÍ¼Æ¬1.jpg
+		        //ï¿½ï¿½Ê¼ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½Í¼Æ¬1.jpg
 		public ImagePanel(){
 //			try{
 //				image=ImageIO.read(new File("E:/out.jpg"));
 //		   }catch(IOException e){e.getStackTrace();}
 		}
-		        //ÊµÏÖÍ¼Æ¬µÄ¸üÐÂ
+		        //Êµï¿½ï¿½Í¼Æ¬ï¿½Ä¸ï¿½ï¿½ï¿½
 		public void loadPhoto(Image img){
 		    image=img;
 		    repaint();
@@ -96,7 +101,7 @@ public class picOnly extends JFrame {
 			if(image==null) return;
 			int imageWidth=image.getWidth(this);
 			int imageHeight=image.getHeight(this);
-			//½«Í¼Æ¬»­ÔÚ×óÉÏ½Ç
+			//ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï½ï¿½
 			g.drawImage(image, 0, 0, null);
 		}
 	} 
