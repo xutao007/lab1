@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.2-dev-20160306-90c514b" sequence="1" timestamp="1508732382996" analysisTimestamp="1508732378658" release="">
+  <Project projectName="lab4">
+    <Jar>E:\lab\lab4\bin</Jar>
+    <AuxClasspathEntry>E:\lab\lab4\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jdk1.8.0_45\jre\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>E:\lab\lab4\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="appUI.GraphViz">
+      <SourceLine classname="appUI.GraphViz" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    </Class>
+    <Method classname="appUI.GraphViz" name="readSource" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="appUI.GraphViz" start="361" end="377" startBytecode="0" endBytecode="339" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="appUI.GraphViz" start="366" end="366" startBytecode="37" endBytecode="37" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    <SourceLine classname="appUI.GraphViz" start="366" end="366" startBytecode="37" endBytecode="37" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="appUI.GraphViz">
+      <SourceLine classname="appUI.GraphViz" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    </Class>
+    <Method classname="appUI.GraphViz" name="writeDotSourceToFile" signature="(Ljava/lang/String;)Ljava/io/File;" isStatic="false">
+      <SourceLine classname="appUI.GraphViz" start="302" end="314" startBytecode="0" endBytecode="254" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    </Method>
+    <Method classname="java.io.FileWriter" name="&lt;init&gt;" signature="(Ljava/io/File;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileWriter" start="90" end="91" startBytecode="0" endBytecode="40" sourcefile="FileWriter.java" sourcepath="java/io/FileWriter.java"/>
+    </Method>
+    <SourceLine classname="appUI.GraphViz" start="305" end="305" startBytecode="43" endBytecode="43" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    <SourceLine classname="appUI.GraphViz" start="305" end="305" startBytecode="43" endBytecode="43" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="appUI.GraphViz">
+      <SourceLine classname="appUI.GraphViz" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    </Class>
+    <Method classname="appUI.GraphViz" name="get_img_stream" signature="(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)[B" isStatic="false">
+      <SourceLine classname="appUI.GraphViz" start="253" end="288" startBytecode="0" endBytecode="659" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="appUI.GraphViz" start="266" end="266" startBytecode="166" endBytecode="166" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="appUI.GraphViz" start="267" end="267" startBytecode="171" endBytecode="171" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="appUI.GraphViz" start="277" end="277" startBytecode="240" endBytecode="240" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="appUI.GraphViz" start="278" end="278" startBytecode="242" endBytecode="242" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="appUI.GraphViz" start="279" end="279" startBytecode="272" endBytecode="272" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="appUI.GraphViz" start="280" end="280" startBytecode="280" endBytecode="280" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="appUI.GraphViz" start="285" end="285" startBytecode="303" endBytecode="303" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="appUI.GraphViz" start="288" end="288" startBytecode="316" endBytecode="316" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="appUI.GraphViz">
+      <SourceLine classname="appUI.GraphViz" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    </Class>
+    <Method classname="appUI.GraphViz" name="writeDotSourceToFile" signature="(Ljava/lang/String;)Ljava/io/File;" isStatic="false">
+      <SourceLine classname="appUI.GraphViz" start="302" end="314" startBytecode="0" endBytecode="254" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    </Method>
+    <Class classname="java.io.Writer" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.Writer" sourcefile="Writer.java" sourcepath="java/io/Writer.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="appUI.GraphViz" start="305" end="305" startBytecode="43" endBytecode="43" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="appUI.GraphViz" start="306" end="306" startBytecode="47" endBytecode="47" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="appUI.GraphViz" start="307" end="307" startBytecode="56" endBytecode="56" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="appUI.GraphViz" start="310" end="310" startBytecode="77" endBytecode="77" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="appUI.GraphViz" start="311" end="311" startBytecode="78" endBytecode="78" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="appUI.GraphViz" start="312" end="312" startBytecode="87" endBytecode="87" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Writer x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="appUI.GraphViz">
+      <SourceLine classname="appUI.GraphViz" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    </Class>
+    <Method classname="appUI.GraphViz" name="writeGraphToFile" signature="([BLjava/io/File;)I" isStatic="false">
+      <SourceLine classname="appUI.GraphViz" start="221" end="227" startBytecode="0" endBytecode="148" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    </Method>
+    <Class classname="java.io.OutputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.OutputStream" sourcefile="OutputStream.java" sourcepath="java/io/OutputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="appUI.GraphViz" start="221" end="221" startBytecode="5" endBytecode="5" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="appUI.GraphViz" start="222" end="222" startBytecode="9" endBytecode="9" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="appUI.GraphViz" start="224" end="224" startBytecode="21" endBytecode="21" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="appUI.GraphViz" start="225" end="225" startBytecode="22" endBytecode="22" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{OutputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" first="1">
+    <Class classname="appUI.GraphViz">
+      <SourceLine classname="appUI.GraphViz" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    </Class>
+    <Method classname="appUI.GraphViz" name="readSource" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="appUI.GraphViz" start="361" end="377" startBytecode="0" endBytecode="49" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader" start="66" end="249" sourcefile="Reader.java" sourcepath="java/io/Reader.java"/>
+    </Type>
+    <SourceLine classname="appUI.GraphViz" start="366" end="366" startBytecode="27" endBytecode="27" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+    <SourceLine classname="appUI.GraphViz" start="366" end="366" startBytecode="27" endBytecode="27" sourcefile="GraphViz.java" sourcepath="appUI/GraphViz.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="appUI.calcUI">
+      <SourceLine classname="appUI.calcUI" start="19" end="116" sourcefile="calcUI.java" sourcepath="appUI/calcUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NP_NULL_PARAM_DEREF" priority="1" rank="6" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="appUI.calcUI$ButtonClickListener">
+      <SourceLine classname="appUI.calcUI$ButtonClickListener" sourcefile="calcUI.java" sourcepath="appUI/calcUI.java"/>
+    </Class>
+    <Method classname="appUI.calcUI$ButtonClickListener" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="appUI.calcUI$ButtonClickListener" start="121" end="162" startBytecode="0" endBytecode="703" sourcefile="calcUI.java" sourcepath="appUI/calcUI.java"/>
+    </Method>
+    <Method classname="appUI.graphFunction" name="getGraphDot" signature="(LappUI/digraph;Ljava/lang/String;)Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="appUI.graphFunction" start="63" end="88" startBytecode="0" endBytecode="681" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <Int value="2" role="INT_MAYBE_NULL_ARG"/>
+    <Field classname="appUI.calcUI" name="pathStr" signature="Ljava/lang/String;" isStatic="false" role="FIELD_CONTAINS_VALUE">
+      <SourceLine classname="appUI.calcUI" sourcefile="calcUI.java" sourcepath="appUI/calcUI.java"/>
+    </Field>
+    <SourceLine classname="appUI.calcUI$ButtonClickListener" start="134" end="134" startBytecode="136" endBytecode="136" sourcefile="calcUI.java" sourcepath="appUI/calcUI.java" role="SOURCE_LINE_INVOKED"/>
+    <SourceLine classname="appUI.calcUI$ButtonClickListener" start="131" end="131" startBytecode="105" endBytecode="105" sourcefile="calcUI.java" sourcepath="appUI/calcUI.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="appUI.calcUI$ButtonClickListener" start="132" end="132" startBytecode="108" endBytecode="108" sourcefile="calcUI.java" sourcepath="appUI/calcUI.java" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.digraph">
+      <SourceLine classname="appUI.digraph" sourcefile="digraph.java" sourcepath="appUI/digraph.java"/>
+    </Class>
+    <Method classname="appUI.digraph" name="addEdge" signature="(II)V" isStatic="false">
+      <SourceLine classname="appUI.digraph" start="84" end="90" startBytecode="0" endBytecode="51" sourcefile="digraph.java" sourcepath="appUI/digraph.java"/>
+    </Method>
+    <LocalVariable name="word1" register="4" pc="85" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.digraph" start="86" end="86" startBytecode="83" endBytecode="83" sourcefile="digraph.java" sourcepath="appUI/digraph.java"/>
+    <SourceLine classname="appUI.digraph" start="86" end="86" startBytecode="83" endBytecode="83" sourcefile="digraph.java" sourcepath="appUI/digraph.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="word1"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.digraph">
+      <SourceLine classname="appUI.digraph" sourcefile="digraph.java" sourcepath="appUI/digraph.java"/>
+    </Class>
+    <Method classname="appUI.digraph" name="addEdge" signature="(II)V" isStatic="false">
+      <SourceLine classname="appUI.digraph" start="84" end="90" startBytecode="0" endBytecode="51" sourcefile="digraph.java" sourcepath="appUI/digraph.java"/>
+    </Method>
+    <LocalVariable name="word2" register="5" pc="103" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.digraph" start="87" end="87" startBytecode="101" endBytecode="101" sourcefile="digraph.java" sourcepath="appUI/digraph.java"/>
+    <SourceLine classname="appUI.digraph" start="87" end="87" startBytecode="101" endBytecode="101" sourcefile="digraph.java" sourcepath="appUI/digraph.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="word2"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="appUI.digraph">
+      <SourceLine classname="appUI.digraph" start="19" end="120" sourcefile="digraph.java" sourcepath="appUI/digraph.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="appUI.exportUI">
+      <SourceLine classname="appUI.exportUI" start="23" end="87" sourcefile="exportUI.java" sourcepath="appUI/exportUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="appUI.exportUI$ButtonClickListener">
+      <SourceLine classname="appUI.exportUI$ButtonClickListener" sourcefile="exportUI.java" sourcepath="appUI/exportUI.java"/>
+    </Class>
+    <Method classname="appUI.exportUI$ButtonClickListener" name="actionPerformed" signature="(Ljava/awt/event/ActionEvent;)V" isStatic="false">
+      <SourceLine classname="appUI.exportUI$ButtonClickListener" start="91" end="113" startBytecode="0" endBytecode="69" sourcefile="exportUI.java" sourcepath="appUI/exportUI.java"/>
+    </Method>
+    <String value="E:\\out.jpg" role="FILE_NAME"/>
+    <SourceLine classname="appUI.exportUI$ButtonClickListener" start="101" end="101" startBytecode="101" endBytecode="101" sourcefile="exportUI.java" sourcepath="appUI/exportUI.java"/>
+    <SourceLine classname="appUI.exportUI$ButtonClickListener" start="101" end="101" startBytecode="101" endBytecode="101" sourcefile="exportUI.java" sourcepath="appUI/exportUI.java"/>
+  </BugInstance>
+  <BugInstance type="BX_UNBOXING_IMMEDIATELY_REBOXED" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="getGraphDot" signature="(LappUI/digraph;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="34" end="58" startBytecode="0" endBytecode="521" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="valueOf" signature="(I)Ljava/lang/Integer;" isStatic="true" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="830" end="832" startBytecode="0" endBytecode="72" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="43" end="43" startBytecode="91" endBytecode="91" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="43" end="43" startBytecode="91" endBytecode="91" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="calcShortestPath" signature="(LappUI/digraph;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="368" end="377" startBytecode="0" endBytecode="40" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <LocalVariable name="numMap" register="4" pc="17" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.graphFunction" start="369" end="369" startBytecode="15" endBytecode="15" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="369" end="369" startBytecode="15" endBytecode="15" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="numMap"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="calcShortestPath" signature="(LappUI/digraph;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="368" end="377" startBytecode="0" endBytecode="40" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <LocalVariable name="wordMap" register="3" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.graphFunction" start="368" end="368" startBytecode="7" endBytecode="7" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="368" end="368" startBytecode="7" endBytecode="7" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="wordMap"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="calcShortestPath" signature="(LappUI/digraph;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="290" end="362" startBytecode="0" endBytecode="288" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <LocalVariable name="numMap" register="5" pc="18" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.graphFunction" start="291" end="291" startBytecode="16" endBytecode="16" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="291" end="291" startBytecode="16" endBytecode="16" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="numMap"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="calcShortestPath" signature="(LappUI/digraph;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="290" end="362" startBytecode="0" endBytecode="288" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <LocalVariable name="wordMap" register="4" pc="9" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.graphFunction" start="290" end="290" startBytecode="7" endBytecode="7" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="290" end="290" startBytecode="7" endBytecode="7" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="wordMap"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="myFileReader" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="122" end="143" startBytecode="0" endBytecode="72" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <LocalVariable name="lineTxt" register="6" pc="68" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.graphFunction" start="128" end="128" startBytecode="66" endBytecode="66" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="128" end="128" startBytecode="66" endBytecode="66" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="lineTxt"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="queryBridgeWords" signature="(LappUI/digraph;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="149" end="182" startBytecode="0" endBytecode="158" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <LocalVariable name="numMap" register="5" pc="12" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.graphFunction" start="150" end="150" startBytecode="10" endBytecode="10" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="150" end="150" startBytecode="10" endBytecode="10" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="numMap"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="randomWalk" signature="(LappUI/digraph;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="381" end="437" startBytecode="0" endBytecode="138" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <LocalVariable name="numMap" register="3" pc="16" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.graphFunction" start="382" end="382" startBytecode="15" endBytecode="15" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="382" end="382" startBytecode="15" endBytecode="15" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="numMap"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="randomWalk" signature="(LappUI/digraph;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="381" end="437" startBytecode="0" endBytecode="138" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <LocalVariable name="wordMap" register="2" pc="8" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.graphFunction" start="381" end="381" startBytecode="7" endBytecode="7" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="381" end="381" startBytecode="7" endBytecode="7" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.DEAD_OBJECT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.KILLED_BY_SUBSEQUENT_STORE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="wordMap"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="appUI.graphFunction" start="14" end="23" startBytecode="0" endBytecode="34" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <String value="C:\\Users\\xutao\\Documents\\test.txt" role="FILE_NAME"/>
+    <SourceLine classname="appUI.graphFunction" start="15" end="15" startBytecode="11" endBytecode="11" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="15" end="15" startBytecode="11" endBytecode="11" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="myFileReader" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="122" end="143" startBytecode="0" endBytecode="405" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <Method classname="java.io.InputStreamReader" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.InputStreamReader" start="72" end="79" startBytecode="0" endBytecode="108" sourcefile="InputStreamReader.java" sourcepath="java/io/InputStreamReader.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="126" end="126" startBytecode="43" endBytecode="43" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="126" end="126" startBytecode="43" endBytecode="43" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="cleanText" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="261" end="285" startBytecode="0" endBytecode="333" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="261" end="261" startBytecode="4" endBytecode="4" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="261" end="261" startBytecode="4" endBytecode="4" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="generateNewText" signature="(LappUI/digraph;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="233" end="255" startBytecode="0" endBytecode="410" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="238" end="238" startBytecode="17" endBytecode="17" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="238" end="238" startBytecode="17" endBytecode="17" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="getGraphDot" signature="(LappUI/digraph;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="34" end="58" startBytecode="0" endBytecode="521" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="35" end="35" startBytecode="9" endBytecode="9" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="35" end="35" startBytecode="9" endBytecode="9" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="getGraphDot" signature="(LappUI/digraph;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="63" end="88" startBytecode="0" endBytecode="681" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="69" end="69" startBytecode="81" endBytecode="81" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="69" end="69" startBytecode="81" endBytecode="81" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="myFileReader" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="122" end="143" startBytecode="0" endBytecode="405" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="122" end="122" startBytecode="4" endBytecode="4" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="122" end="122" startBytecode="4" endBytecode="4" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="ES_COMPARING_STRINGS_WITH_EQ" priority="2" rank="11" abbrev="ES" category="BAD_PRACTICE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="generateNewText" signature="(LappUI/digraph;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="233" end="255" startBytecode="0" endBytecode="93" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <Type descriptor="Ljava/lang/String;" role="TYPE_FOUND">
+      <SourceLine classname="java.lang.String" start="111" end="3129" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Type>
+    <String value="" role="STRING_CONSTANT"/>
+    <LocalVariable name="bridge" register="8" pc="99" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="appUI.graphFunction" start="247" end="247" startBytecode="102" endBytecode="102" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="247" end="247" startBytecode="102" endBytecode="102" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.RefComparisonWarningProperty.EMPTY_AND_UNKNOWN" value="true"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" start="12" end="437" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="myFileReader" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="122" end="143" startBytecode="0" endBytecode="72" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/Reader;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.Reader" start="66" end="249" sourcefile="Reader.java" sourcepath="java/io/Reader.java"/>
+    </Type>
+    <SourceLine classname="appUI.graphFunction" start="127" end="127" startBytecode="48" endBytecode="48" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    <SourceLine classname="appUI.graphFunction" start="127" end="127" startBytecode="48" endBytecode="48" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="calcShortestPath" signature="(LappUI/digraph;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="290" end="362" startBytecode="0" endBytecode="1295" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="354" end="354" startBytecode="488" endBytecode="488" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="cleanText" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="261" end="285" startBytecode="0" endBytecode="333" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="278" end="278" startBytecode="127" endBytecode="127" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="generateNewText" signature="(LappUI/digraph;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="233" end="255" startBytecode="0" endBytecode="410" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="252" end="252" startBytecode="158" endBytecode="158" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="getGraphDot" signature="(LappUI/digraph;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="34" end="58" startBytecode="0" endBytecode="521" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="48" end="48" startBytecode="164" endBytecode="164" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="getGraphDot" signature="(LappUI/digraph;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="63" end="88" startBytecode="0" endBytecode="681" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="84" end="84" startBytecode="295" endBytecode="295" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="myFileReader" signature="(Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="122" end="143" startBytecode="0" endBytecode="405" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="132" end="132" startBytecode="91" endBytecode="91" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="queryBridgeWords" signature="(LappUI/digraph;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="149" end="182" startBytecode="0" endBytecode="663" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="178" end="178" startBytecode="290" endBytecode="290" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="SBSC_USE_STRINGBUFFER_CONCATENATION" priority="2" rank="18" abbrev="SBSC" category="PERFORMANCE" first="1">
+    <Class classname="appUI.graphFunction">
+      <SourceLine classname="appUI.graphFunction" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Class>
+    <Method classname="appUI.graphFunction" name="randomWalk" signature="(LappUI/digraph;)Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.graphFunction" start="381" end="437" startBytecode="0" endBytecode="727" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+    </Method>
+    <SourceLine classname="appUI.graphFunction" start="422" end="422" startBytecode="211" endBytecode="211" sourcefile="graphFunction.java" sourcepath="appUI/graphFunction.java"/>
+  </BugInstance>
+  <BugInstance type="DMI_HARDCODED_ABSOLUTE_FILENAME" priority="2" rank="17" abbrev="DMI" category="STYLE" first="1">
+    <Class classname="appUI.menuUI">
+      <SourceLine classname="appUI.menuUI" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+    </Class>
+    <Method classname="appUI.menuUI" name="renewPic" signature="()V" isStatic="false">
+      <SourceLine classname="appUI.menuUI" start="138" end="154" startBytecode="0" endBytecode="26" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+    </Method>
+    <String value="E:/out.jpg" role="FILE_NAME"/>
+    <SourceLine classname="appUI.menuUI" start="139" end="139" startBytecode="8" endBytecode="8" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+    <SourceLine classname="appUI.menuUI" start="139" end="139" startBytecode="8" endBytecode="8" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="appUI.menuUI">
+      <SourceLine classname="appUI.menuUI" start="21" end="154" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.menuUI$ImagePanel">
+      <SourceLine classname="appUI.menuUI$ImagePanel" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+    </Class>
+    <Method classname="appUI.menuUI$ImagePanel" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="appUI.menuUI$ImagePanel" start="173" end="180" startBytecode="0" endBytecode="25" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+    </Method>
+    <LocalVariable name="imageHeight" register="3" pc="31" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.menuUI$ImagePanel" start="177" end="177" startBytecode="30" endBytecode="30" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+    <SourceLine classname="appUI.menuUI$ImagePanel" start="177" end="177" startBytecode="30" endBytecode="30" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="imageHeight"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.menuUI$ImagePanel">
+      <SourceLine classname="appUI.menuUI$ImagePanel" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+    </Class>
+    <Method classname="appUI.menuUI$ImagePanel" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="appUI.menuUI$ImagePanel" start="173" end="180" startBytecode="0" endBytecode="25" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+    </Method>
+    <LocalVariable name="imageWidth" register="2" pc="22" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.menuUI$ImagePanel" start="176" end="176" startBytecode="21" endBytecode="21" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+    <SourceLine classname="appUI.menuUI$ImagePanel" start="176" end="176" startBytecode="21" endBytecode="21" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="imageWidth"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="appUI.menuUI$ImagePanel">
+      <SourceLine classname="appUI.menuUI$ImagePanel" start="160" end="180" sourcefile="menuUI.java" sourcepath="appUI/menuUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="appUI.newstrUI">
+      <SourceLine classname="appUI.newstrUI" start="18" end="84" sourcefile="newstrUI.java" sourcepath="appUI/newstrUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="appUI.picOnly">
+      <SourceLine classname="appUI.picOnly" start="30" end="80" sourcefile="picOnly.java" sourcepath="appUI/picOnly.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="appUI.picOnly$ButtonClickListener">
+      <SourceLine classname="appUI.picOnly$ButtonClickListener" start="109" end="115" sourcefile="picOnly.java" sourcepath="appUI/picOnly.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.picOnly$ImagePanel">
+      <SourceLine classname="appUI.picOnly$ImagePanel" sourcefile="picOnly.java" sourcepath="appUI/picOnly.java"/>
+    </Class>
+    <Method classname="appUI.picOnly$ImagePanel" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="appUI.picOnly$ImagePanel" start="99" end="106" startBytecode="0" endBytecode="25" sourcefile="picOnly.java" sourcepath="appUI/picOnly.java"/>
+    </Method>
+    <LocalVariable name="imageHeight" register="3" pc="31" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.picOnly$ImagePanel" start="103" end="103" startBytecode="30" endBytecode="30" sourcefile="picOnly.java" sourcepath="appUI/picOnly.java"/>
+    <SourceLine classname="appUI.picOnly$ImagePanel" start="103" end="103" startBytecode="30" endBytecode="30" sourcefile="picOnly.java" sourcepath="appUI/picOnly.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="imageHeight"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE" first="1">
+    <Class classname="appUI.picOnly$ImagePanel">
+      <SourceLine classname="appUI.picOnly$ImagePanel" sourcefile="picOnly.java" sourcepath="appUI/picOnly.java"/>
+    </Class>
+    <Method classname="appUI.picOnly$ImagePanel" name="paintComponent" signature="(Ljava/awt/Graphics;)V" isStatic="false">
+      <SourceLine classname="appUI.picOnly$ImagePanel" start="99" end="106" startBytecode="0" endBytecode="25" sourcefile="picOnly.java" sourcepath="appUI/picOnly.java"/>
+    </Method>
+    <LocalVariable name="imageWidth" register="2" pc="22" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="appUI.picOnly$ImagePanel" start="102" end="102" startBytecode="21" endBytecode="21" sourcefile="picOnly.java" sourcepath="appUI/picOnly.java"/>
+    <SourceLine classname="appUI.picOnly$ImagePanel" start="102" end="102" startBytecode="21" endBytecode="21" sourcefile="picOnly.java" sourcepath="appUI/picOnly.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.BASE_VALUE" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="imageWidth"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.METHOD_RESULT" value="true"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.NO_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="SIC_INNER_SHOULD_BE_STATIC" priority="2" rank="18" abbrev="SIC" category="PERFORMANCE" first="1">
+    <Class classname="appUI.picOnly$ImagePanel">
+      <SourceLine classname="appUI.picOnly$ImagePanel" start="86" end="106" sourcefile="picOnly.java" sourcepath="appUI/picOnly.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="appUI.queryUI">
+      <SourceLine classname="appUI.queryUI" start="20" end="85" sourcefile="queryUI.java" sourcepath="appUI/queryUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="appUI.randomUI">
+      <SourceLine classname="appUI.randomUI" start="19" end="81" sourcefile="randomUI.java" sourcepath="appUI/randomUI.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="DM_STRING_VOID_CTOR" priority="2" rank="18" abbrev="Dm" category="PERFORMANCE" first="1">
+    <Class classname="appUI.randomUI$Thread2">
+      <SourceLine classname="appUI.randomUI$Thread2" sourcefile="randomUI.java" sourcepath="appUI/randomUI.java"/>
+    </Class>
+    <Method classname="appUI.randomUI$Thread2" name="run" signature="()V" isStatic="false">
+      <SourceLine classname="appUI.randomUI$Thread2" start="128" end="164" startBytecode="0" endBytecode="741" sourcefile="randomUI.java" sourcepath="appUI/randomUI.java"/>
+    </Method>
+    <SourceLine classname="appUI.randomUI$Thread2" start="129" end="129" startBytecode="21" endBytecode="21" sourcefile="randomUI.java" sourcepath="appUI/randomUI.java"/>
+    <SourceLine classname="appUI.randomUI$Thread2" start="129" end="129" startBytecode="21" endBytecode="21" sourcefile="randomUI.java" sourcepath="appUI/randomUI.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="appUI.randomUI$Thread2">
+      <SourceLine classname="appUI.randomUI$Thread2" sourcefile="randomUI.java" sourcepath="appUI/randomUI.java"/>
+    </Class>
+    <Field classname="appUI.randomUI$Thread2" name="name" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="appUI.randomUI$Thread2" sourcefile="randomUI.java" sourcepath="appUI/randomUI.java"/>
+    </Field>
+    <SourceLine classname="appUI.randomUI$Thread2" start="119" end="119" startBytecode="16" endBytecode="16" sourcefile="randomUI.java" sourcepath="appUI/randomUI.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="appUI.randomUI$Thread2">
+      <SourceLine classname="appUI.randomUI$Thread2" sourcefile="randomUI.java" sourcepath="appUI/randomUI.java"/>
+    </Class>
+    <Field classname="appUI.randomUI$Thread2" name="stopMe" signature="Z" isStatic="false">
+      <SourceLine classname="appUI.randomUI$Thread2" sourcefile="randomUI.java" sourcepath="appUI/randomUI.java"/>
+    </Field>
+    <SourceLine classname="appUI.randomUI$Thread2" start="116" end="116" startBytecode="11" endBytecode="11" sourcefile="randomUI.java" sourcepath="appUI/randomUI.java"/>
+  </BugInstance>
+  <BugInstance type="NM_CLASS_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="appUI.startUI">
+      <SourceLine classname="appUI.startUI" start="17" end="84" sourcefile="startUI.java" sourcepath="appUI/startUI.java"/>
+    </Class>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 23 Oct 2017 12:12:37 +0800" total_classes="32" referenced_classes="395" total_bugs="57" total_size="1300" num_packages="1" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="33.25" clock_seconds="74.53" peak_mbytes="758.90" alloc_mbytes="1024.00" gc_seconds="0.13" priority_2="53" priority_1="4">
+    <PackageStats package="appUI" total_bugs="57" total_types="32" total_size="1300" priority_2="53" priority_1="4">
+      <ClassStats class="appUI.GraphViz" sourceFile="GraphViz.java" interface="false" size="135" bugs="6" priority_2="4" priority_1="2"/>
+      <ClassStats class="appUI.calcUI" sourceFile="calcUI.java" interface="false" size="82" bugs="1" priority_2="1"/>
+      <ClassStats class="appUI.calcUI$1" sourceFile="calcUI.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="appUI.calcUI$ButtonClickListener" sourceFile="calcUI.java" interface="false" size="40" bugs="1" priority_1="1"/>
+      <ClassStats class="appUI.digraph" sourceFile="digraph.java" interface="false" size="68" bugs="3" priority_2="3"/>
+      <ClassStats class="appUI.exportUI" sourceFile="exportUI.java" interface="false" size="49" bugs="1" priority_2="1"/>
+      <ClassStats class="appUI.exportUI$1" sourceFile="exportUI.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="appUI.exportUI$ButtonClickListener" sourceFile="exportUI.java" interface="false" size="22" bugs="1" priority_2="1"/>
+      <ClassStats class="appUI.exportUI$FileChooser" sourceFile="exportUI.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="appUI.graphFunction" sourceFile="graphFunction.java" interface="false" size="262" bugs="27" priority_2="26" priority_1="1"/>
+      <ClassStats class="appUI.menuUI" sourceFile="menuUI.java" interface="false" size="77" bugs="2" priority_2="2"/>
+      <ClassStats class="appUI.menuUI$1" sourceFile="menuUI.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="appUI.menuUI$ButtonClickListener" sourceFile="menuUI.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="appUI.menuUI$ImagePanel" sourceFile="menuUI.java" interface="false" size="18" bugs="3" priority_2="3"/>
+      <ClassStats class="appUI.newstrUI" sourceFile="newstrUI.java" interface="false" size="51" bugs="1" priority_2="1"/>
+      <ClassStats class="appUI.newstrUI$1" sourceFile="newstrUI.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="appUI.newstrUI$ButtonClickListener" sourceFile="newstrUI.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="appUI.picOnly" sourceFile="picOnly.java" interface="false" size="32" bugs="1" priority_2="1"/>
+      <ClassStats class="appUI.picOnly$1" sourceFile="picOnly.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="appUI.picOnly$ButtonClickListener" sourceFile="picOnly.java" interface="false" size="8" bugs="1" priority_2="1"/>
+      <ClassStats class="appUI.picOnly$ImagePanel" sourceFile="picOnly.java" interface="false" size="18" bugs="3" priority_2="3"/>
+      <ClassStats class="appUI.queryUI" sourceFile="queryUI.java" interface="false" size="52" bugs="1" priority_2="1"/>
+      <ClassStats class="appUI.queryUI$1" sourceFile="queryUI.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="appUI.queryUI$ButtonClickListener" sourceFile="queryUI.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="appUI.randomUI" sourceFile="randomUI.java" interface="false" size="54" bugs="1" priority_2="1"/>
+      <ClassStats class="appUI.randomUI$1" sourceFile="randomUI.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="appUI.randomUI$ButtonClickListener" sourceFile="randomUI.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="appUI.randomUI$Thread2" sourceFile="randomUI.java" interface="false" size="44" bugs="3" priority_2="3"/>
+      <ClassStats class="appUI.startUI" sourceFile="startUI.java" interface="false" size="49" bugs="1" priority_2="1"/>
+      <ClassStats class="appUI.startUI$1" sourceFile="startUI.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="appUI.startUI$ButtonClickListener" sourceFile="startUI.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="appUI.startUI$FileChooser" sourceFile="startUI.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="519" invocations="2" avgMicrosecondsPerInvocation="259664" maxMicrosecondsPerInvocation="262280" standardDeviationMircosecondsPerInvocation="2616"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="494" invocations="1757" avgMicrosecondsPerInvocation="281" maxMicrosecondsPerInvocation="37439" standardDeviationMircosecondsPerInvocation="1070"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="304" invocations="395" avgMicrosecondsPerInvocation="770" maxMicrosecondsPerInvocation="24604" standardDeviationMircosecondsPerInvocation="1937"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="299" invocations="395" avgMicrosecondsPerInvocation="759" maxMicrosecondsPerInvocation="18357" standardDeviationMircosecondsPerInvocation="1690"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="193" invocations="1000" avgMicrosecondsPerInvocation="193" maxMicrosecondsPerInvocation="3877" standardDeviationMircosecondsPerInvocation="278"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="146" invocations="163" avgMicrosecondsPerInvocation="896" maxMicrosecondsPerInvocation="34084" standardDeviationMircosecondsPerInvocation="2890"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="144" invocations="1762" avgMicrosecondsPerInvocation="81" maxMicrosecondsPerInvocation="360" standardDeviationMircosecondsPerInvocation="36"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="110" invocations="168" avgMicrosecondsPerInvocation="657" maxMicrosecondsPerInvocation="9900" standardDeviationMircosecondsPerInvocation="1195"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="107" invocations="163" avgMicrosecondsPerInvocation="662" maxMicrosecondsPerInvocation="9522" standardDeviationMircosecondsPerInvocation="1237"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="104" invocations="173" avgMicrosecondsPerInvocation="603" maxMicrosecondsPerInvocation="13794" standardDeviationMircosecondsPerInvocation="1326"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="90" invocations="395" avgMicrosecondsPerInvocation="228" maxMicrosecondsPerInvocation="3863" standardDeviationMircosecondsPerInvocation="439"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="88" invocations="163" avgMicrosecondsPerInvocation="542" maxMicrosecondsPerInvocation="12966" standardDeviationMircosecondsPerInvocation="1166"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="83" invocations="112" avgMicrosecondsPerInvocation="746" maxMicrosecondsPerInvocation="8074" standardDeviationMircosecondsPerInvocation="1233"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="82" invocations="163" avgMicrosecondsPerInvocation="509" maxMicrosecondsPerInvocation="6211" standardDeviationMircosecondsPerInvocation="908"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="82" invocations="475" avgMicrosecondsPerInvocation="174" maxMicrosecondsPerInvocation="17893" standardDeviationMircosecondsPerInvocation="860"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="73" invocations="395" avgMicrosecondsPerInvocation="187" maxMicrosecondsPerInvocation="36874" standardDeviationMircosecondsPerInvocation="1862"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="65" invocations="395" avgMicrosecondsPerInvocation="165" maxMicrosecondsPerInvocation="3838" standardDeviationMircosecondsPerInvocation="285"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="60" invocations="395" avgMicrosecondsPerInvocation="152" maxMicrosecondsPerInvocation="8268" standardDeviationMircosecondsPerInvocation="482"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="56" invocations="395" avgMicrosecondsPerInvocation="142" maxMicrosecondsPerInvocation="8943" standardDeviationMircosecondsPerInvocation="505"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="54" invocations="163" avgMicrosecondsPerInvocation="337" maxMicrosecondsPerInvocation="33011" standardDeviationMircosecondsPerInvocation="2571"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="53" invocations="1706" avgMicrosecondsPerInvocation="31" maxMicrosecondsPerInvocation="1018" standardDeviationMircosecondsPerInvocation="60"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="52" invocations="395" avgMicrosecondsPerInvocation="133" maxMicrosecondsPerInvocation="2305" standardDeviationMircosecondsPerInvocation="260"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1508732382986" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
