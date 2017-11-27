@@ -87,7 +87,7 @@ public class newstrUI extends JFrame {
     public void actionPerformed(ActionEvent e) {
       String command = e.getActionCommand();
       if (command.equals("ok")) {
-        graphFunction f = new graphFunction();
+        newStrControl f = new newStrControl();
         String res = f.generateNewText(gDigraph, inputStr.getText());
         outputStr.setText(res);
       }

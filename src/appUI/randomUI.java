@@ -87,7 +87,7 @@ public class randomUI extends JFrame {
         // œﬂ≥Ã÷’÷π
         flag = false;
         String nowPathTmp = nowPath.trim();
-        graphFunction f = new graphFunction();
+        exportControl f = new exportControl();
         String dotStr = f.getGraphDot(gDigraph, nowPathTmp);
         GraphViz gv = new GraphViz();
         gv.addln(gv.start_graph());
@@ -141,7 +141,7 @@ public class randomUI extends JFrame {
         }
       }
       if (flag) {
-        graphFunction f = new graphFunction();
+        exportControl f = new exportControl();
         String dotStr = f.getGraphDot(gDigraph, allPath);
         GraphViz gv = new GraphViz();
         gv.addln(gv.start_graph());

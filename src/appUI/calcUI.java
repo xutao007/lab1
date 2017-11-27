@@ -126,12 +126,13 @@ public class calcUI extends JFrame {
         if (word1.isEmpty() || word2.isEmpty()) {
           warningMsg.setText("请规范输入，不要为空");
         } else {
-          graphFunction f = new graphFunction();
-          pathStr = f.calcShortestPath(gDigraph, word1, word2);
+          calcControl calcCont = new calcControl();
+          exportControl expoCont = new exportControl();
+          pathStr = calcCont.calcShortestPath(gDigraph, word1, word2);
           if (pathStr == null) {
             warningMsg.setText("两者不可达");
           }
-          String dotStr = f.getGraphDot(gDigraph, pathStr);
+          String dotStr = expoCont.getGraphDot(gDigraph, pathStr);
           GraphViz gv = new GraphViz();
           gv.addln(gv.start_graph());
           gv.add(dotStr);

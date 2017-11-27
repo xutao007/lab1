@@ -12,18 +12,14 @@ import java.util.Random;
 public class graphFunction {
   public static void main(String[] args) {
     graphFunction f = new graphFunction();
-    digraph G = f.createDirectedGraph("E:\\test.txt");
+    digraph G = f.createDirectedGraph("C:\\Users\\xutao\\Documents\\test.txt");
     String word1 = "to";
     String word2 = "civilizations";
-   // String s = f.queryBridgeWords(G, word1, word2);
-    String inputText = "to strange worlds";
-    String s = f.generateNewText(G, inputText);
+    String s = f.calcShortestPath(G, word1, word2);
     System.out.println(s);
-   // String s = f.calcShortestPath(G, word1, word2);
-   // System.out.println(s);
-   // System.out.println(f.getGraphDot(G, s));
-   // String t = f.randomWalk(G);
-   // System.out.println(t);
+    System.out.println(f.getGraphDot(G, s));
+    String t = f.randomWalk(G);
+    System.out.println(t);
   }
 
   // 生成有向图
@@ -149,28 +145,25 @@ public class graphFunction {
 
   // 查询桥接词
   public String queryBridgeWords(digraph G, String word1, String word2) {
-    if(G==null)
-      return "No " + word1 + " or " + word2 + " in the graph!";
+
     Map wordMap = G.getWordMap();
     Map numMap = G.getNumMap();
-    ArrayList<String> bridges = new ArrayList<>();
 
-    if (wordMap.get(word1) == null && wordMap.get(word2) == null)
-      return "No " + word1 + " or " + word2 + " in the graph!";
-    if (wordMap.get(word1) == null)
-      return "No " + word1 + " in the graph!";
-    if (wordMap.get(word2) == null)
-      return "No " + word2 + " in the graph!";
-
-    int word1Code = (int) wordMap.get(word1);
-    int word2Code = (int) wordMap.get(word2);
-    ArrayList adj = G.getAdj();
-
-    for (Object bridge : ((Map) adj.get(word1Code)).keySet()) {
-       if (G.isExist((int) bridge, word2Code)) {
-         bridges.add((String) numMap.get(bridge));
-       }
+    // 做判断
+    if (wordMap.get(word1) == null || wordMap.get(word2) == null) {
+      if (wordMap.get(word1) == null && wordMap.get(word2) == null) {
+        return "No " + word1 + " or " + word2 + " in the graph!";
+      } else {
+        if (wordMap.get(word1) == null) {
+          return "No " + word1 + " in the graph!";
+        } else {
+          return "No " + word2 + " in the graph!";
+        }
+      }
     }
+
+    // bridges存储bridge字符串
+    ArrayList<String> bridges = getBridges(G, word1, word2);
 
     if (bridges.size() == 0) {
       String res = "No bridge words from " + word1 + " to " + word2 + "!";
@@ -188,6 +181,11 @@ public class graphFunction {
       }
       return res;
     }
+    // 随机生成一个桥
+    // Random random = new Random();
+    // String res = (String)bridges.get(random.nextInt(bridges.size()));
+    // System.out.println(res);
+    // return "The bridge";
   }
 
   // 返回所有桥接词组合，如果没有则空
@@ -230,15 +228,14 @@ public class graphFunction {
   }
 
   // 根据桥接词生成新文本
- 
   public String generateNewText(digraph G, String inputText) {
+    // 整理输入
     inputText = cleanText(inputText);
+
+    // 分割单词
     String[] words = inputText.split(" ");
+
     String res = new String();
-    if (words.length == 1){
-      res += words[0];
-      return res;
-    }
     // 遍历并生成bridge单词
     for (int i = 0; i < words.length - 1; i++) {
       String word1 = words[i];
@@ -300,6 +297,7 @@ public class graphFunction {
       System.out.println(word1 + " or " + word2 + " is not in the graph.");
       return null;
     }
+
     int from = (int) wordMap.get(word1);
     int to = (int) wordMap.get(word2);
     int V = G.getV();
@@ -332,15 +330,16 @@ public class graphFunction {
       }
       used[u] = 1;
       for (int j = 0; j < V; j++) {
-        if (used[j] == 0)
-          if(G.isExist(u, j) == true)
-            if (dist[u] + G.edgeWeight(u, j) < dist[j]) {
-              dist[j] = dist[u] + G.edgeWeight(u, j);
-              pre[j] = u;
-            }
+        if (used[j] == 0 && G.isExist(u, j) == true)
+          if (dist[u] + G.edgeWeight(u, j) < dist[j]) {
+            dist[j] = dist[u] + G.edgeWeight(u, j);
+            pre[j] = u;
+          }
       }
     }
     if (dist[to] < maxn) {
+      // System.out.println("Length of the shortest path "+word1+" to "+word2+" is
+      // "+dist[to]+".");
       int t = pre[to];
       int[] pave = new int[V];
       int x = 0;
@@ -348,10 +347,13 @@ public class graphFunction {
         pave[x++] = t;
         t = pre[t];
       }
+      // System.out.print(word1);
       path += word1; // 路径起点
       for (int i = x - 1; i >= 0; i--) {
+        // System.out.print(" -> " + numMap.get(pave[i]));
         path += (" -> " + numMap.get(pave[i]));
       }
+      // System.out.println(" -> " + word2);
       path += (" -> " + word2);
       path = cleanText(path);
       return path;

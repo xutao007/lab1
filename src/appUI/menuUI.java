@@ -99,19 +99,20 @@ public class menuUI extends JFrame {
   }
 
   public void setDigraph() {
-    graphFunction f = new graphFunction();
+    startControl f = new startControl();
     this.gDigraph = f.createDirectedGraph(fileName);
   }
 
   public void loadPic() {
     // 通过调用grapgFunction生成图和dot文本
     // System.out.println("in menuUI" + fileName);
-    graphFunction f = new graphFunction();
+    startControl f = new startControl();
     digraph G = f.createDirectedGraph(fileName);
     // String dotStr = f.getGraphDot(G);
     // String dotStrTest = new String("a1 -> b3;b2 -> a3;a3 -> a0;a3 -> end;");
     // System.out.println(dotStr);
-    f.showDirectedGrapg(G);
+    menuControl m = new menuControl();
+    m.showDirectedGrapg(G);
     // 产生图
     // GraphViz gv = new GraphViz();
     // gv.addln(gv.start_graph());
@@ -200,10 +201,10 @@ public class menuUI extends JFrame {
         calcUIWindow.setDigraph(gDigraph);
         calcUIWindow.setVisible(true);
       } else {
-        graphFunction f = new graphFunction();
-        // digraph Gcopy = new digraph(gDigraph);
-        String pathStr = f.randomWalk(new digraph(gDigraph));
-        String dotStr = f.getGraphDot(gDigraph, pathStr);
+        randomControl randCont = new randomControl();
+        exportControl expoCont = new exportControl();
+        String pathStr = randCont.randomWalk(new digraph(gDigraph));
+        String dotStr = expoCont.getGraphDot(gDigraph, pathStr);
         GraphViz gv = new GraphViz();
         gv.addln(gv.start_graph());
         gv.add(dotStr);

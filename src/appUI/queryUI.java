@@ -93,7 +93,7 @@ public class queryUI extends JFrame {
         if (w1.isEmpty() && w2.isEmpty()) {
           textArea.setText("请确保word1和word2非空");
         } else {
-          graphFunction f = new graphFunction();
+          queryControl f = new queryControl();
           String res = f.queryBridgeWords(gDigraph, w1, w2);
           textArea.setText(res);
         }
