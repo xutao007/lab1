@@ -298,6 +298,7 @@ public class GraphViz {
 	 */
 	private File writeDotSourceToFile(String str) throws java.io.IOException {
 		File temp;
+		System.out.println("!!!!!!!");
 		try {
 			System.out.println("0");
 			temp = File.createTempFile("graph_", ".dot.tmp", new File(tempDir));
